@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --sys-black: #000000;
+  --sys-white: #FFFFFF;
+  --sys-link: #0094d3;
+  --cta-primary: #FF003D;
+  --cta-primary-hover: #FF3161;
+  --cta-secondary-hover: #EEEEEE;
+  --html-color: #FF8A00;
+  --css-color: #00B2FF;
+  --js-color: #FFE500;
+  --bg-footer: #1E2F47;
+  --bg-gradient: linear-gradient(135deg, rgba(255,55,0,1) 0%, rgba(251,203,0,1) 50%, rgba(0,156,255,1) 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration:  none;
+}
+
+.section {
+  margin-left: 286px;
+  margin-right: 286px;
+}
+
+.container {
+  padding-left: 286px;
+  padding-right: 286px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header {
+  background-image: url("assets/background.png"), var(--bg-gradient);
+  background-position: 40% 15%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo span {
+  color: var(--sys-black);
+  font-family: "Dosis";
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--sys-white);
+  padding-left: 286px;
+  padding-right: 286px;
+  height: 80px;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul li {
+  list-style: none;
+  padding: 10px;
+  color: var(--sys-black);
+  font-size: 18px;;
+}
+
+.menu ul li a {
+  padding: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: var(--sys-black);
+}
+
+.menu ul li a:hover {
+  color: var(--sys-link);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--sys-white);
+  padding-top: 78px;
+}
+
+.hero h1 {
+  font-family: "Dosis";
+  font-weight: 400;
+}
+
+.hero span {
+  font-family: "Dosis";
+  font-weight: 700;
+}
+
+.cover {
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+
+.hero p {
+  width: 766px;
+  text-align: center;
+  padding-top: 12px;
+  font-size: 20px;
+}
+
+.hero div {
+  display: flex;
+  gap: 32px;
+}
+
+.hero-img {
+  display: flex;
+  align-items: center;
+}
+
+.hero-img a {
+  border: 2px solid transparent;
+}
+
+.body-js {
+  position: relative;
+  transform: scale(0.7);
+  animation-duration: 3s;
+  z-index: 10;
+}
+
+.body-html {
+  position: relative;
+  animation-duration: 3s;
+  z-index: 12;
+}
+
+.body-css {
+  position: relative;
+  transform: scale(0.7);
+  animation-duration: 3s;
+  z-index: 8;
+}
+
+.arrow {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.arrow:focus {
+ outline: none;
+ border-radius: 50%;
+ border: 2px solid #fff;
+}
+
+.cta {
+  margin-bottom: 64px;
+  width: 220px;
+  height: 56px;
+  border-radius: 200px;
+}
+
+.cta-first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--cta-primary);
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--sys-white);
+}
+
+.cta-first:hover {
+  background-color: var(--cta-primary-hover);
+}
+
+.cta-second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--sys-white);
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--sys-black);
+}
+
+.cta-second:hover {
+  background-color: var(--cta-secondary-hover);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 132px;
+  padding-bottom: 132px;
+}
+
+.content .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sec-html {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.sec-css {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.sec-html h2 {
+  color: var(--html-color);
+}
+
+.sec-css h2 {
+  color: var(--css-color);
+}
+
+.sec-js h2 {
+  color: var(--js-color);
+}
+
+.content div h2 {
+  font-family: "Dosis";
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.content div p {
+  width: 535px;
+  font-family: "Dosis";
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.sec-css {
+  flex-direction: row-reverse;
+}
+
+.line-html {
+  width: 55px;
+  height: 8px;
+  background-color: var(--html-color);
+}
+
+.line-css {
+  width: 55px;
+  height: 8px;
+  background-color: var(--css-color);
+}
+
+.line-js {
+  width: 55px;
+  height: 8px;
+  background-color: var(--js-color);
+}
+
+.footer {
+  background-color: var(--bg-footer);
+}
+
+.footer a {
+  color: var(--sys-white);
+}
+
+.footer a:hover {
+  color: var(--sys-link)
+}
+
+.footer .medias {
+  display: flex;
+  gap: 8px;
+}
+
+.footer .medias a {
+  padding: 8px;
+}
+
+.footer .medias a:hover {
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 8px;
+}
+
+/* turn right */
+@keyframes centerToRightHTML {
+  from {left:0px; scale:1}
+  to {left:200px; scale:0.7;}
+}
+
+@keyframes rightToLeftHTML {
+  from {left:200px; scale:0.7;}
+  to {left:-200px; scale:0.7;}
+}
+
+@keyframes leftToCenterHTML {
+  from {left:-200px; scale:0.7;}
+  to {left:0px; scale:1;}
+}
+
+/* turn left */
+@keyframes centerToLeftHTML {
+  from {left:0px; scale:1}
+  to {left:-200px; scale:0.7;}
+}
+
+@keyframes leftToRightHTML {
+  from {left:-200px; scale:0.7;}
+  to {left:200px; scale:0.7;}
+}
+
+@keyframes rightToCenterHTML {
+  from {left:200px; scale:0.7}
+  to {left:0px; scale:1;}
+}
+
+/* turn right */
+@keyframes rightToLeftCSS{
+  from {left:0px; scale:1;}
+  to {left:-400px; scale:1;}
+}
+
+@keyframes leftToCenterCSS {
+  from {left:-400px; scale:1;}
+  to {left:-200px; scale:1.4;}
+}
+
+@keyframes centerToRightCSS {
+  from {left:-200px; scale:1.4}
+  to {left:0px; scale:1;}
+}
+
+/* turn left */
+@keyframes rightToCenterCSS {
+  from {left:0px; scale:1}
+  to {left:-200px; scale:1.4;}
+}
+
+@keyframes centerToLeftCSS {
+  from {left:-200px; scale:1.4}
+  to {left:-400px; scale:1;}
+}
+
+@keyframes leftToRightCSS {
+  from {left:-400px; scale:1}
+  to {left:0px; scale:1;}
+}
+
+/* turn right */
+@keyframes leftToCenterJS {
+  from {left:0px; scale:1;}
+  to {left:200px; scale:1.4;}
+}
+
+@keyframes centerToRightJS {
+  from {left:200px; scale:1.4}
+  to {left:400px; scale:1;}
+}
+
+@keyframes rightToLeftJS{
+  from {left:400px; scale:1;}
+  to {left:0px; scale:1;}
+}
+
+/* turn left */
+@keyframes leftToRightJS {
+  from {left:0px; scale:1}
+  to {left:400px; scale:1;}
+}
+
+@keyframes rightToCenterJS {
+  from {left:400px; scale:1}
+  to {left:200px; scale:1.4;}
+}
+
+@keyframes centerToLeftJS {
+  from {left:200px; scale:1.4}
+  to {left:0px; scale:1;}
+}
